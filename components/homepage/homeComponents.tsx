@@ -28,6 +28,7 @@ function DefaultHome({ handleclick }: { handleclick: any }) {
               className="card-img-top btn"
               src={v.imgUrl}
               alt="Card image cap"
+              onClick={handleclick}
             />
             <div className="card-body">
               <h5 className="card-title">{v.title}</h5>

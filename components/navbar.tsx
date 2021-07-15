@@ -1,10 +1,18 @@
 import React, { FC, useState } from "react";
 import styles from "../styles/Navbar.module.scss";
 import Link from "next/link";
+import Headers from "./head";
+
 
 const Navbar: FC = () => {
   const [state, setstate] = useState<boolean>(true);
   return (
+
+    <>
+    <header>
+      <Headers />
+    </header>
+
     <nav className={styles.navbar_postion}>
       {state ? (
         <Defaultnavbar handleclick={() => setstate(!state)} />
@@ -13,6 +21,7 @@ const Navbar: FC = () => {
       )}
       <NavbarWithHamburger />
     </nav>
+    </>
   );
 };
 

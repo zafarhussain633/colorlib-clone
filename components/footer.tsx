@@ -1,8 +1,7 @@
 import React ,{FC} from "react";
-import styles from "../styles/Navbar.module.scss";
 import Socialmediabtn from "./mainpage/socialmediabtn";
 
-const Footer = ()=> {
+const Footer:FC = ()=> {
   return (
     <footer className="bg-dark text-light pt-4">
       <div className="row footer-container">

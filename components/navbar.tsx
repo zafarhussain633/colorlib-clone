@@ -1,6 +1,5 @@
 import React, { FC, useState } from "react";
 import styles from "../styles/Navbar.module.scss";
-import logo from "./logo.png";
 import Link from "next/link"
 
 

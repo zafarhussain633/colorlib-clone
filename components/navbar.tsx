@@ -35,7 +35,7 @@ function Defaultnavbar({ handleclick }: { handleclick: any }) {
           <Link href="/"> Home</Link>
         </div>
         <div>
-          <Link href="https://colorlibsupport.com/">Support</Link>
+          <Link href="https://colorlibsupport.com/" passHref={true}>Support</Link>
         </div>
         <div>
           <Link href="/freethemes">Free themes</Link>
@@ -50,7 +50,7 @@ function Defaultnavbar({ handleclick }: { handleclick: any }) {
           <Link href="/home">Blog</Link>
         </div>
         <div>
-          <Link href="https://colorlib.com/checkout/my-account/">Acount</Link>
+          <Link href="https://colorlib.com/checkout/my-account/" passHref={true}>Acount</Link>
         </div>
         <div>
           <i className="fas fa-search btn" onClick={handleclick}></i>

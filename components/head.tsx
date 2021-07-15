@@ -1,7 +1,7 @@
-import React,{FC}from "react";
+import React from "react";
 import Head from "next/head";
 
-const Headers:FC = ()=> {
+const Headers = ()=> {
   return (
     <Head>
       <title>Create Next App</title>

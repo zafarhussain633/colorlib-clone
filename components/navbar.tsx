@@ -21,12 +21,12 @@ function Defaultnavbar({ handleclick }: { handleclick: any }) {
     <div className={`${styles.navbar}`}>
       <div className={`${styles.logo}`}>
         <div>
-          <a href="/">
+          <Link href="/">
             <img
               src="https://colorlib.com/wp/wp-content/uploads/sites/2/colorlib-logo-top.png"
               alt="logo"
             />
-          </a>
+          </Link>
         </div>
       </div>
 
@@ -125,9 +125,9 @@ const NavbarWithHamburger: FC = () => {
       </div>
 
       <div className={`${styles.mySidenav} ${styles.sidenav}`} style={width}>
-        <a href="#" className={styles.closebtn} onClick={closeNav}>
+        <div className={`${styles.closebtn} btn`} onClick={closeNav}>
           &times;
-        </a>
+        </div>
         <Link href="/">home</Link>
         <Link href="https://colorlibsupport.com/" passHref={true}>support</Link>
         <Link href="/freethemes">Free themes</Link>

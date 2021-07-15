@@ -1,0 +1,139 @@
+
+$secondary-color : #d6d6d6;
+$primary-color: rgba(0, 0, 0, 0.692);
+$secondarybg-color: #61616113;
+
+*{
+  margin:0px;
+  padding:0px;
+  box-sizing:border-box;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+i{
+  cursor: pointer;
+}
+* {
+  box-sizing: border-box;
+}
+
+.subtextColor {
+  color: $secondary-color;
+}
+.textColor{
+  color: $primary-color;
+}
+.bgcolor{
+  background-color: $secondarybg-color;
+}
+
+.margin{
+  margin-top: 2.5rem;
+  width: 70%;
+}
+
+h1, h2, h3, h4, h5, h6{
+  font-weight: 600;
+  color: #222;
+  line-height: 1.4;
+  margin: 30px 0 20px;
+}
+p{
+  color:#757575;
+}
+
+.price{
+  .price_title {
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 100;
+    text-transform: uppercase;
+    color: #21262c;
+    padding: 28px 0;
+    margin: 0 35px 25px;
+    border-bottom: 1px solid #d7d7d7;
+  }
+  .price_dollor{
+    font-weight: 100;
+    font-size: 64px;
+    color: #212429;
+    line-height: 1;
+    }
+    li{
+      padding: 1px 20px;
+      font-size: 10px;
+      text-transform: uppercase;
+      font-weight: 600;
+      line-height: 40px;
+      border-top: 1px solid #f0f2f3;
+      color: #8a8a8a;
+      list-style: none;
+    }
+    .buy_btn{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 10px;
+    color: #fff;
+    box-shadow: 0 8px 10px 0 rgb(80 127 207 / 20%);
+    background-color: #507fcf!important;
+    font-size: 14px;
+    line-height: 30px;
+    padding: 12px 30px;
+    font-weight: 400;
+    }
+  }
+  
+  .purchase_advantages{
+    
+    margin-top: 14rem;
+
+    li{
+    list-style: none;
+    border-top: 2px solid #f0f2f3;
+    font-size: 10px;
+    text-transform: uppercase;
+    white-space: nowrap;
+    font-weight: bold;
+    color: #333;
+    }
+}
+// homepage 
+.card-width{
+  width: 21rem;
+}
+
+footer{
+  .footer-container{
+    margin: auto;
+    width: 75%;
+  }
+  .footer-bottom{
+    background-color: black;
+  }
+}
+
+
+@media(max-width: 1500px ){
+  .margin{
+    margin-top: 2.5rem;
+    width: 95%;
+  }
+}
+
+
+@media(max-width: 992px) {
+  .card-width{
+    width: 25rem;
+  }
+}

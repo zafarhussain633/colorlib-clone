@@ -1,9 +1,8 @@
 import React, { FC, useState } from "react";
 import styles from "../styles/Navbar.module.scss";
-import Link from "next/link"
+import Link from "next/link";
 
-
-const Navbar:FC = ()=> {
+const Navbar: FC = () => {
   const [state, setstate] = useState<boolean>(true);
   return (
     <nav className={styles.navbar_postion}>
@@ -15,7 +14,7 @@ const Navbar:FC = ()=> {
       <Hamburger />
     </nav>
   );
-}
+};
 
 function Defaultnavbar({ handleclick }: { handleclick: any }) {
   return (
@@ -33,39 +32,25 @@ function Defaultnavbar({ handleclick }: { handleclick: any }) {
 
       <div className={`${styles.navitem} d-none d-lg-flex`}>
         <div>
-          <a className="textColor">
-           <Link  href="/">home</Link>
-          </a>
+          <Link href="/"> Home</Link>
         </div>
         <div>
-          <a className="textColor">
-          <Link  href="https://colorlibsupport.com/">Support</Link>
-          </a>
+          <Link href="https://colorlibsupport.com/">Support</Link>
         </div>
         <div>
-          <a className="textColor">
-          <Link  href="/freethemes">Free themes</Link>
-          </a>
+          <Link href="/freethemes">Free themes</Link>
         </div>
         <div>
-          <a className="textColor">
-          <Link  href="/freethemes">Premium themses</Link>
-          </a>
+          <Link href="/freethemes">Premium themses</Link>
         </div>
         <div>
-          <a className="textColor">
-          <Link  href="/home">Website Template</Link>
-          </a>
+          <Link href="/home">Website Template</Link>
         </div>
         <div>
-          <a className="textColor" >
-          <Link  href="/home">Blog</Link>
-          </a>
+          <Link href="/home">Blog</Link>
         </div>
         <div>
-          <a className="textColor">
-            <Link  href="https://colorlib.com/checkout/my-account/">Acount</Link>
-          </a>
+          <Link href="https://colorlib.com/checkout/my-account/">Acount</Link>
         </div>
         <div>
           <i className="fas fa-search btn" onClick={handleclick}></i>
@@ -75,8 +60,15 @@ function Defaultnavbar({ handleclick }: { handleclick: any }) {
   );
 }
 
-function Searchbar({display,placeholder,handleclick}:{display: string, placeholder: string, handleclick: any}) 
-{
+function Searchbar({
+  display,
+  placeholder,
+  handleclick,
+}: {
+  display: string;
+  placeholder: string;
+  handleclick: any;
+}) {
   return (
     <div className={`${styles.search_container} ${display}`}>
       <form action="">
@@ -105,11 +97,7 @@ Searchbar.defaultProps = {
   placeholder: "TYPE THEN HIT ENTER TO SEARCH",
 };
 
-
-
-
-
-const Hamburger:FC = ()=> {
+const Hamburger: FC = () => {
   const [width, setwidth] = useState<object>({ width: "" });
 
   function openNav() {
@@ -154,6 +142,6 @@ const Hamburger:FC = ()=> {
       </div>
     </div>
   );
-}
+};
 
 export default Navbar;

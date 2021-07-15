@@ -11,7 +11,7 @@ const Navbar: FC = () => {
       ) : (
         <Searchbar handleclick={() => setstate(!state)} />
       )}
-      <Hamburger />
+      <NavbarWithHamburger />
     </nav>
   );
 };
@@ -97,7 +97,8 @@ Searchbar.defaultProps = {
   placeholder: "TYPE THEN HIT ENTER TO SEARCH",
 };
 
-const Hamburger: FC = () => {
+
+const NavbarWithHamburger: FC = () => {
   const [width, setwidth] = useState<object>({ width: "" });
 
   function openNav() {
@@ -127,13 +128,13 @@ const Hamburger: FC = () => {
         <a href="#" className={styles.closebtn} onClick={closeNav}>
           &times;
         </a>
-        <a href="/">home</a>
-        <a href="https://colorlibsupport.com/">support</a>
-        <a href="/freethemes">Free themes</a>
-        <a href="/home">Premium theme</a>
-        <a href="/home">Website Template</a>
-        <a href="home">Blog</a>
-        <a href="https://colorlib.com/checkout/my-account">Acount</a>
+        <Link href="/">home</Link>
+        <Link href="https://colorlibsupport.com/" passHref={true}>support</Link>
+        <Link href="/freethemes">Free themes</Link>
+        <Link href="/home">Premium theme</Link>
+        <Link href="/home">Website Template</Link>
+        <Link href="/home">Blog</Link>
+        <Link href="https://colorlib.com/checkout/my-account" passHref={true}>Acount</Link>
         <Searchbar
           display="d-block"
           placeholder="search"
